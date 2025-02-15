@@ -1,0 +1,96 @@
+.form-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding-top: 78px;
+  align-items: center;
+  background-color: #000;
+}
+
+.left-column {
+  width: 15%;
+  height: 100%;
+  border-right: 1px solid rgb(149, 13, 13);
+  padding: 50px 25px 0 25px;
+}
+
+.btn-tile {
+  width: 100%;
+  background-color: #000000;
+  color: #ff0000;
+  border: none;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-tile:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.right-column {
+  width: 25%;
+  height: 100%;
+  padding: 50px 25px 0 25px;
+  border-left: 1px solid rgb(149, 13, 13);
+}
+
+.middle-column {
+  flex: 1;
+  height: 100%;
+  padding: 10px 0 25px 0;
+  overflow-y: scroll;
+}
+
+.list-posts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-posts-item {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #c31414;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.list-posts-item:hover {
+  cursor: pointer;
+}
+
+.profile-picture {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture > img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.profile-username {
+  font-size: 15px;
+  color: #ababab;
+}
